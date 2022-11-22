@@ -117,3 +117,27 @@ static readonly double Pi = 3.14159;
     * show：顯示物件，例如：ShowDialog()
     * on：定義 event 的時候使用，像是 OnClick(), OnChange()
     * handle：當 OnClick 之類的 event 發生時所觸發的 function
+
+方法中用到的參數視作私有變數，使用小駱駝峰，如：
+```
+(string name, int age)
+```
+如果有泛型直接使用 T 做表示，如：
+```
+（ List<T> T1, List<T> T2）
+```
+
+# 其他注意事項
+* 比起弄很多大櫃子然後把東西都塞進去，分工明確的小抽屜更方便靈活
+* 輸入參數應該越少越好，如果參數高於三個以上，試著換個思路重構這個方法
+* 輸入參數不要使用傳入 Boolean 來改變類別和函式的行為（違反單一職責）
+* 有多載的需求時，將輸入參數最多的宣告設為 virtual，其他較少輸入參數的則以呼叫最多輸入參數的函式來完成建構
+* 如果類別的名稱已經有足夠的說明，則方法名稱就不需要再複誦一次
+    * 例如 ProductService.GetProduct() 就是贅詞
+    * 可以改為 ProductService.Get() 就好
+* 呼叫方法時，如果傳入參數無法直接識別內容，則應使用具名傳遞
+    * 例如 Get(productId, true) 很難看出來 true 代表的意思
+    * 可以改為 Get(productId, isInStock: true) 就好
+* 回傳值除了單純的運算式以外，一律回傳變數
+>參考資料  https://github.com/EngTW/English-for-Programmers
+>參考資料2 https://docs.microsoft.com/zh-tw/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands?view=powershell-7.2#common-verbs
