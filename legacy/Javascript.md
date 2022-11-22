@@ -122,3 +122,9 @@ var newObject = new MyClass(params);
 
 > Brace placement Style說明請參考 https://en.wikipedia.org/wiki/Indentation_style
 
+```
+while (x == y) {
+    something();
+    somethingelse();
+}
+```
