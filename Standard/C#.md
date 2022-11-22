@@ -61,3 +61,14 @@ public enum KeywordTypeEnum
 ```
 ICarFactory
 ```
+
+## 變數、屬性
+公開變數使用大駱駝峰，例如：
+```
+public string Name { set; get; }
+```
+私有變數使用小駱駝峰，看專案決定需不需要加上底線當前綴，例如：
+```
+private int approvalRating
+```
+常數一律大寫，但建議使用 static readonly 然後使用大駱駝峰。因為前輩的文件表示過使用常數連結 DLL 時如果修改 DLL 的常數再參考但尚未建置時會導致一些神奇的錯誤
