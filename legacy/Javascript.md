@@ -14,6 +14,19 @@
 
 可允許 HTML 內的 inline JS 使用 4 spaces， 我們Team 的 PHP 規範以 4 spaces 為縮排，當 JS 不得已必須寫在 PHP 檔案內時則不在此限，不過應避免混用的情形發生。
 
+### Brace placement
+雖然說在Javascript使用Allman 或 K&R Style 皆可，但使用Allman於開發工具中可能產生意外的BUG，故，我們強烈要求使用K&R Style
+
+> Brace placement Style說明請參考 https://en.wikipedia.org/wiki/Indentation_style
+
+```
+while (x == y) {
+    something();
+    somethingelse();
+}
+```
+
+
 ### 命名
 
 使用駝峰式命名，但開頭小寫，例如： `fooBar`。
@@ -117,14 +130,3 @@ var newObject = new MyClass(params);
 - 多行註解上方應放置說明，在目標程式碼的上方
 - 使用VisualStudio 自定義的註解即可
 
-## Brace placement
-雖然說在Javascript使用Allman 或 K&R Style 皆可，但使用Allman於開發工具中可能產生意外的BUG，故，我們強烈要求使用K&R Style
-
-> Brace placement Style說明請參考 https://en.wikipedia.org/wiki/Indentation_style
-
-```
-while (x == y) {
-    something();
-    somethingelse();
-}
-```
