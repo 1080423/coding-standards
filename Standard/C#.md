@@ -193,6 +193,7 @@ int result = (exponent >= 0)? mantissa * (1 << exponent): mantissa / (1 << -expo
 
 #迴圈
 - **迴圈不要用 do/while**
+    
     除非你有逼不得已的苦衷...
 因為大多數方法和區塊邏輯判斷都在前面，因此使用後置條件會影響閱讀性
 - **減少巢狀結構，不要玩波動拳**
