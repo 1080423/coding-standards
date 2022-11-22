@@ -120,4 +120,5 @@ var newObject = new MyClass(params);
 ## Brace placement
 雖然說在Javascript使用Allman 或 K&R Style 皆可，但使用Allman於開發工具中可能產生意外的BUG，故，我們強烈要求使用K&R Style
 
-[Brace placement Style說明]([https://github.com/airbnb/javascript](https://en.wikipedia.org/wiki/Indentation_style#Allman_style))
+> Brace placement Style說明請參考 https://en.wikipedia.org/wiki/Indentation_style
+
