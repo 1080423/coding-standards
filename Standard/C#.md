@@ -67,11 +67,11 @@ ICarFactory
 ```
 public string Name { set; get; }
 ```
-私有變數使用小駱駝峰，看專案決定需不需要加上底線當前綴，例如：
+**私有變數使用小駱駝峰，看專案決定需不需要加上底線當前綴，例如：**
 ```
 private int approvalRating
 ```
-常數一律大寫，但建議使用 static readonly 然後使用大駱駝峰。因為前輩的文件表示過使用常數連結 DLL 時如果修改 DLL 的常數再參考但尚未建置時會導致一些神奇的錯誤
+**常數一律大寫，但建議使用 static readonly 然後使用大駱駝峰。因為前輩的文件表示過使用常數連結 DLL 時如果修改 DLL 的常數再參考但尚未建置時會導致一些神奇的錯誤**
 ```
 const double PI = 3.14159;
 static readonly double Pi = 3.14159;
@@ -94,5 +94,26 @@ static readonly double Pi = 3.14159;
     * 變數的宣告和其命名都是為了讓閱讀者能直接看出改變的差異或當下變數的狀態
 
 # 方法
-一律使用大駱駝峰，前綴字規定如下
-
+**一律使用大駱駝峰，前綴字規定如下**
+* 擷取
+    * Get：從資料庫抓回資料
+    * Search：頁面或定義為搜尋時
+    * Find：在既有的資料集合找資料
+    * Fetch：從遠端 (透過API) 獲取資料，例如：`FetchUsers()
+    * load：從本地端加載資料，例如：LoadFile()
+* 修改
+    * Update：對資料庫的異動
+    * Modify：現有變數或資料集合的變動
+* 建立
+    * Insert：資料庫的資料建立
+    * Create：資料集合或物件的建立
+    * Generate：單純產生特定資料供使用
+* 刪除
+    * Delete：資料庫的資料刪除（資料將不存在）
+    * Remove：資料集合的資料移除／資料間的關係移除（資料仍存在）
+* 其他
+    * Convert：代碼轉文字／編碼之間的轉換
+    * calculate/calc：通過計算獲取資料，例如：CalcBMI()
+    * show：顯示物件，例如：ShowDialog()
+    * on：定義 event 的時候使用，像是 OnClick(), OnChange()
+    * handle：當 OnClick 之類的 event 發生時所觸發的 function
