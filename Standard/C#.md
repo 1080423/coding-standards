@@ -78,10 +78,10 @@ static readonly double Pi = 3.14159;
 ```
 
 命名變數時的注意事項：
-*包含邊界的極值優先使用 min 與 max
-*閉區間優先使用 first 與 end
-*半開放區間優先使用 begin 與 end
-*Boolean 變數開頭必須使用 is can has should 或有狀態差異的形容詞
+* 包含邊界的極值優先使用 min 與 max
+* 閉區間優先使用 first 與 end
+* 半開放區間優先使用 begin 與 end
+* Boolean 變數開頭必須使用 is can has should 或有狀態差異的形容詞
 
 宣告變數時的注意事項：
 - 變數越多越難記得所有變數
