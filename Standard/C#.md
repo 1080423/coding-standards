@@ -143,6 +143,6 @@ static readonly double Pi = 3.14159;
 
 [EngTW/English-for-Programmers: 《程式英文》：用英文提昇程式可讀性 (github.com)](https://github.com/EngTW/English-for-Programmers)
 
->參考資料2 https://docs.microsoft.com/zh-tw/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands?view=powershell-7.2#common-verbs
+[已核准的 PowerShell 命令動詞 - PowerShell | Microsoft Docs](https://docs.microsoft.com/zh-tw/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands?view=powershell-7.2#common-verbs)
 
 
