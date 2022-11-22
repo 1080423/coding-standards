@@ -144,4 +144,4 @@ var newObject = new MyClass(params);
  */
 ```
 
-詳細 JS Docblock 內容目前以 PHPStorm 自動產生的樣式為主，具體格式可約略參考 [YUI Doc](http://yui.github.io/yuidoc/syntax/index.html)，但我們的格式會要求排版與對齊。
+詳細 JS Docblock 內容目前以 VisualStudio 自動產生的樣式為，我們的格式要求排版與對齊即可。
