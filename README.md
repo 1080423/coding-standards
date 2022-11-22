@@ -8,4 +8,5 @@
 並以範例形式展示，提供大家參考使用。
 
 ## 目錄
+[JavaScript](https://github.com/1080423/coding-standards/blob/main/legacy/Javascript.md "JavaScript")
 [C#](http://www.google.com "Google")  
