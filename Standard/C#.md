@@ -93,7 +93,7 @@ static readonly double Pi = 3.14159;
     * 當變數內容改變，就可以考慮宣告成新的變數
     * 變數的宣告和其命名都是為了讓閱讀者能直接看出改變的差異或當下變數的狀態
 
-# 方法
+## 方法
 **一律使用大駱駝峰，前綴字規定如下**
 * 擷取
     * Get：從資料庫抓回資料
@@ -127,7 +127,7 @@ static readonly double Pi = 3.14159;
 （ List<T> T1, List<T> T2）
 ```
 
-# 其他注意事項
+## 其他注意事項
 * 比起弄很多大櫃子然後把東西都塞進去，分工明確的小抽屜更方便靈活
 * 輸入參數應該越少越好，如果參數高於三個以上，試著換個思路重構這個方法
 * 輸入參數不要使用傳入 Boolean 來改變類別和函式的行為（違反單一職責）
@@ -139,10 +139,36 @@ static readonly double Pi = 3.14159;
     * 例如 Get(productId, true) 很難看出來 true 代表的意思
     * 可以改為 Get(productId, isInStock: true) 就好
 * 回傳值除了單純的運算式以外，一律回傳變數
-
-
+* 參考資料
 [EngTW/English-for-Programmers: 《程式英文》：用英文提昇程式可讀性 (github.com)](https://github.com/EngTW/English-for-Programmers)
 
 [已核准的 PowerShell 命令動詞 - PowerShell | Microsoft Docs](https://docs.microsoft.com/zh-tw/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands?view=powershell-7.2#common-verbs)
 
+# 斷行與縮排
+```
+整潔的程式碼讀起來就像一篇優美的散文
+
+　　—— 《無瑕的程式碼》
+```
+
+* 不要過多的斷行，也不要都擠在一起，組織成不同的段落
+    * 方法之間空一行
+    * 參數過長時斷至下一行
+    * 程式碼單行欄位數目以不超過 100~120 字元為原則
+* 不要省略括弧，讓程式碼範疇／區塊明顯可見
+    * 迴圈和 IF 等區塊確實斷行和使用括弧，以維持可閱讀性
+    * 運算式的優先部分也要加上括弧，方便一眼看出計算順序
+* 使 code 的順序流暢
+    * 參數按照傳入的順序排列
+    * 相似方法之間的傳入參數順序盡可能一致
+    * 相關的宣告和操作放在一起
+* 當因為參數過多的時候必須斷到下一行時，從第一個參數之前就開始斷行
+    * 因本條規則斷行後，則一個參數獨立一行，必要時具名，使閱讀時能直接往下閱讀
+    * 不過如果方法參數過多，應先考慮是否重構該方法，極可能違反單一職責
+* 風格一致、風格一致、風格一致
+```
+風格一致很重要，所以說三次
+風格一致很重要，所以說三次
+風格一致很重要，所以說三次
+```
 
