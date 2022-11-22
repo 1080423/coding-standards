@@ -19,3 +19,45 @@ MyStudio.Libs.Basic
 MyStudio.Libs.Web.BaseTools
 ```
 - 專案類別庫：{專案名稱} . {子專案/類別/用途}
+```
+MyProject.Permiss.Proxy
+MyProject.Permiss.Repository
+```
+
+## 類別Class
+使用名詞或名詞片語，不使用任何前綴，須和檔案名稱相同 類別應該要能夠在 25 個字之內做出描述
+
+- 基底類別 (Basic Class)：後綴 Base
+```
+public class ProductBase （=產品基底類別）
+```
+- 一般類別 (General Class) 註：抽象類別與一般類別的命名相同
+```
+public class Product （=產品類別）
+```
+- 集合類別 (Collection Class)：後綴 Collection
+```
+public class ProductCollection （=產品集合類別）
+```
+- 工廠類別 (Factory Class)：後綴 Factory
+```
+public class ProductFactory （=產品工廠類別）
+```
+- Help 類別：應以 Help 名稱、Help 性質方式命名
+```
+public class SystemTimeHelp
+```
+- 有使用 Partial 的類別：檔名按照類別階層命名
+```
+public partial class Core 此類別分散到 Album 和 Banner
+    internal Public class Album -> 檔名為 Core.Album.cs
+    internal Public class Banner -> 檔名為 Core.Banner.cs
+```    
+- 列舉：大駱駝峰，並後綴 Enum
+```
+public enum KeywordTypeEnum
+```
+- 介面：大駱駝峰，前綴 I
+```
+ICarFactory
+```
