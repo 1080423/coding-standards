@@ -112,36 +112,6 @@ var newObject = new MyClass(params);
 
 **多行註解**
 
-- 多行註解應放置在說明的目標程式碼上方
-- 註解起始字元 `/*` 應放在第一行註解上方，註解結束字元 `*/` 應放在最後一行註解下方，
-- 每一行註解應加上 1 個星號後綴一個空白
+- 多行註解上方應放置說明，在目標程式碼的上方
+- 使用VisualStudio 自定義的註解即可
 
-```
-/*
- * I am a multiline comment.
- * Line two
- * Line three
- */
-```
-
-## 區塊註解 (Docblock)
-
-- 區塊註解應用於描述函式、物件與變數時。
-- 註解起始字元應有兩個星號 `/**` 並放在第一行註解上方，註解結束字元 `*/` 應放在最後一行註解下方。
-- 每一行註解應加上 1 個星號，星號前後各加綴一個空白
-- 註解最少應包含敘述、參數與回傳值三種內容並依照這個順序排列。若該函式無參數，則可以省略 `@params`。
-- 敘述與其他內容之間應該要有一空行
-
-範例：
-
-``` javascript
-/**
- * This is my function.
- *
- * @params  {HtmlElement}  html  A html element object.
- *
- * @return  {Object}
- */
-```
-
-詳細 JS Docblock 內容目前以 VisualStudio 自動產生的樣式為，我們的格式要求排版與對齊即可。
