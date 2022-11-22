@@ -140,7 +140,7 @@ static readonly double Pi = 3.14159;
     * 可以改為 Get(productId, isInStock: true) 就好
 * 回傳值除了單純的運算式以外，一律回傳變數
 
-```
+
 [EngTW/English-for-Programmers: 《程式英文》：用英文提昇程式可讀性 (github.com)](https://github.com/EngTW/English-for-Programmers)
 
 >參考資料2 https://docs.microsoft.com/zh-tw/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands?view=powershell-7.2#common-verbs
