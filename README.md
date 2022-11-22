@@ -10,4 +10,4 @@
 ## 目錄
 [JavaScript](https://github.com/1080423/coding-standards/blob/main/Standard/Javascript.md "JavaScript")
 
-[C#](http://www.google.com "Google")  
+[C#](https://github.com/1080423/coding-standards/blob/main/Standard/C%23.md "C#")  
