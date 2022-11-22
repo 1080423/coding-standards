@@ -1,6 +1,6 @@
 # Javascript 編碼規範
 
-自 2022年12月開始，我們以 [AirBnb Javascript Style](https://github.com/airbnb/javascript) 為主要開發規範。並逐步採用 ES2015 + ES7 stage-2 開發環境。
+自 2022年12月開始，我們將以 [AirBnb Javascript Style](https://github.com/airbnb/javascript) 為主要開發規範。並逐步採用 ES2015 + ES7 stage-2 開發環境。
 
 > 中文請參考 https://github.com/jigsawye/javascript
 
