@@ -100,7 +100,7 @@ static readonly double Pi = 3.14159;
     * Search：頁面或定義為搜尋時
     * Find：在既有的資料集合找資料
     * Fetch：從遠端 (透過API) 獲取資料，例如：`FetchUsers()
-    * load：從本地端加載資料，例如：LoadFile()
+    * Load：從本地端加載資料，例如：LoadFile()
 * 修改
     * Update：對資料庫的異動
     * Modify：現有變數或資料集合的變動
